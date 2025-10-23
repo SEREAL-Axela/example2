@@ -1,0 +1,249 @@
+/* 選ばれる理由セクション */
+.advantage-section {
+  width: 1440px;
+  height: 1018px;
+  margin: 0 auto;
+  padding: 50px 100px;
+  background-color: #202020;
+}
+
+.advantage-section .container {
+  padding: 0;
+}
+
+.advantage-section .section-title {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+/* 説明文 */
+.advantage-description {
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.88;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 0 0 60px;
+  max-width: 1028px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* グリッド */
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* カード */
+.advantage-card {
+  background-color: #272727;
+  border-radius: 12px;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* 画像ラッパー */
+.advantage-card-image-wrapper {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+/* 画像 */
+.advantage-card-image {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #3a3a3a;
+}
+
+.advantage-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* コンテンツ */
+.advantage-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* タイトル */
+.advantage-card-title {
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.83;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin: 0 0 34px;
+}
+
+/* 説明文 */
+.advantage-card-desc {
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.92;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 0;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 1440px) {
+  .advantage-section {
+    width: 100%;
+    height: auto;
+    padding: 60px 80px;
+  }
+
+  .advantage-description {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .advantage-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .advantage-card {
+    padding: 50px 35px;
+  }
+
+  .advantage-card-image-wrapper {
+    top: 25px;
+    right: 35px;
+  }
+
+  .advantage-card-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .advantage-card-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .advantage-card-desc {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .advantage-section {
+    padding: 50px 60px;
+  }
+
+  .advantage-description {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .advantage-card {
+    padding: 40px 30px;
+  }
+
+  .advantage-card-image-wrapper {
+    top: 20px;
+    right: 30px;
+  }
+
+  .advantage-card-image {
+    width: 45px;
+    height: 45px;
+  }
+
+  .advantage-card-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .advantage-card-desc {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantage-section {
+    padding: 40px;
+  }
+
+  .advantage-description {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+
+  .advantage-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .advantage-card {
+    padding: 35px 25px;
+  }
+
+  .advantage-card-image-wrapper {
+    top: 18px;
+    right: 25px;
+  }
+
+  .advantage-card-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .advantage-card-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .advantage-card-desc {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .advantage-section {
+    padding: 30px 20px;
+  }
+
+  .advantage-description {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .advantage-card {
+    padding: 30px 20px;
+  }
+
+  .advantage-card-image-wrapper {
+    top: 15px;
+    right: 20px;
+  }
+
+  .advantage-card-image {
+    width: 35px;
+    height: 35px;
+  }
+
+  .advantage-card-title {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  .advantage-card-desc {
+    font-size: 10px;
+  }
+}

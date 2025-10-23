@@ -1,0 +1,126 @@
+/* 課題の解決策セクション */
+.treatment-section {
+  width: 1440px;
+  height: 1018px;
+  margin: 0 auto;
+  padding: 50px 100px 0;
+  background-color: #202020;
+  position: relative;
+  overflow: hidden;
+}
+
+.treatment-section .container {
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.treatment-section .section-title {
+  color: #fff;
+  margin-bottom: 62px;
+}
+
+/* 説明文 */
+.treatment-description {
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.88;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 0;
+  max-width: 1028px;
+  text-align: left;
+}
+
+/* 背景画像 */
+.treatment-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 509px;
+  z-index: 1;
+}
+
+.treatment-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 1440px) {
+  .treatment-section {
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    padding: 60px 80px 0;
+  }
+
+  .treatment-description {
+    font-size: 18px;
+  }
+
+  .treatment-bg {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .treatment-section {
+    min-height: 700px;
+    padding: 50px 60px 0;
+  }
+
+  .treatment-section .section-title {
+    margin-bottom: 50px;
+  }
+
+  .treatment-description {
+    font-size: 16px;
+  }
+
+  .treatment-bg {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .treatment-section {
+    min-height: 600px;
+    padding: 40px 40px 0;
+  }
+
+  .treatment-section .section-title {
+    margin-bottom: 40px;
+  }
+
+  .treatment-description {
+    font-size: 14px;
+  }
+
+  .treatment-bg {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .treatment-section {
+    min-height: 500px;
+    padding: 30px 20px 0;
+  }
+
+  .treatment-section .section-title {
+    margin-bottom: 30px;
+  }
+
+  .treatment-description {
+    font-size: 13px;
+  }
+
+  .treatment-bg {
+    height: 250px;
+  }
+}
