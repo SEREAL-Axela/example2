@@ -2,56 +2,60 @@
 .about-section {
   width: 1440px;
   height: 1018px;
-  margin: 0 auto;
-  padding: 50px 100px;
   background-color: #efefef;
+  padding: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .about-section .container {
+  width: 1440px;
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
+/* タイトル「サービス概要」 */
 .about-section .section-title {
-  margin-bottom: 51px;
+  width: 1440px;
+  padding: 50px 50px 62px;
+  margin: 0;
+  text-align: left;
+}
+
+.about-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* メインタイトル */
 .about-main-title {
-  font-family: 'Hiragino Sans', sans-serif;
+  font-family: noto-sans-jp, sans-serif;
   font-weight: 800;
   font-size: 50px;
-  line-height: 1.27;
-  letter-spacing: 0.02em;
   color: #2c2c2c;
+  text-align: center;
   margin: 0 0 20px;
-  max-width: 1240px;
 }
 
 /* 説明文 */
 .about-description {
-  font-family: 'Hiragino Sans', sans-serif;
+  width: 816px;
+  font-family: noto-sans-jp, sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 2.06;
-  letter-spacing: 0.05em;
-  color: #2c2c2c;
-  margin: 0 0 36px;
-  max-width: 816px;
+  color: #8c8c8c;
   text-align: left;
+  margin: 0 0 36px;
 }
 
 /* 画像 */
 .about-image {
   width: 1028px;
   height: 618px;
-  border-radius: 12px;
-  overflow: hidden;
-  align-self: center;
 }
 
 .about-image img {
@@ -59,94 +63,4 @@
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 1440px) {
-  .about-section {
-    width: 100%;
-    height: auto;
-    padding: 60px 80px;
-  }
-
-  .about-main-title {
-    font-size: 42px;
-    max-width: 100%;
-  }
-
-  .about-description {
-    font-size: 15px;
-    max-width: 100%;
-    margin-bottom: 40px;
-  }
-
-  .about-image {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    aspect-ratio: 1028 / 618;
-  }
-}
-
-@media (max-width: 1024px) {
-  .about-section {
-    padding: 50px 60px;
-  }
-
-  .about-main-title {
-    font-size: 36px;
-  }
-
-  .about-description {
-    font-size: 14px;
-    margin-bottom: 35px;
-  }
-
-  .about-image {
-    max-width: 700px;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-section {
-    padding: 40px;
-  }
-
-  .about-section .section-title {
-    margin-bottom: 40px;
-  }
-
-  .about-main-title {
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
-
-  .about-description {
-    font-size: 13px;
-    margin-bottom: 30px;
-  }
-
-  .about-image {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-section {
-    padding: 30px 20px;
-  }
-
-  .about-section .section-title {
-    margin-bottom: 30px;
-  }
-
-  .about-main-title {
-    font-size: 22px;
-    margin-bottom: 12px;
-  }
-
-  .about-description {
-    font-size: 12px;
-    margin-bottom: 25px;
-  }
 }
